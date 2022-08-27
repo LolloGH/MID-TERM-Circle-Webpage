@@ -1,67 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+/*
+Color styles
+
+Deep blue: 072AC8
+Light blue: 43D2FF
+3rd light blue: A2D6F9
+4th light blue: D1EDFF
+
+Blakish: 292E47
+Grey: 6B708D
+Light Grey: F2F4FC
+4th Grey: ECF7FF
+
+
+
+Yellow: FFC600
+
+
+Text Styles
+
+Heading H1 60 Bold
+Heading H2 50 Bold
+Heading H3 40 Bold
+Heading H4 24 Bold
+Body Intro Text 24 Medium
+Body Intro Text 20 Regular
+Headline Text 17 Regular
+Headline Text 17 Medium
+Caption 1 Text 15 Regular
+Caption 2 Text 13 Regular
+
+*/
 
 body {
   margin: 0 auto;
-  padding: 1em;
-  max-width: 60em;
-  font-family: 'Roboto Mono', sans-serif;
-  line-height: 1.5;
-  color: #2d354c;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  background-color: #F2F4FC;
+
+//  padding: 1em;
+//  max-width: 60em;
+//  line-height: 1.5;
+//  color: #2d354c;
+
 }
 
-button,
-input {
-  font: inherit;
-  color: inherit;
-}
-
-th,
-td,
-button,
-input {
-  padding: 0.75em 1em;
-}
-
-table#cart {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table#cart tfoot {
-  background: #eee;
-}
-
-table#cart td,
-table input {
-  border: 1px solid #dadada;
-}
-
-table input[type='number'] {
-  max-width: 4em;
-}
-
-.btn {
-  display: inline-block;
-  border: 0;
-  border-radius: 0.25em;
-  cursor: pointer;
-}
-
-.btn-success,
-.btn-remove {
-  color: #fff;
-}
-
-.btn-success {
-  background-color: #2cc5fa;
-}
-
-.btn-remove {
-  background-color: #f27471;
-}
-
-h1,
-h2,
-.calculate-total {
-  text-align: center;
-}
