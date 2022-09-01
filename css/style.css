@@ -45,7 +45,7 @@ body {
   background-color: #F2F4FC;
   font-family: 'Roboto';
   font-weight: 300;
-
+  margin: 0px;
 
   /*
   padding: 1em;
@@ -68,7 +68,7 @@ body {
   flex-flow: row wrap;
 
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
@@ -107,30 +107,58 @@ body {
 
 .hero-container {
   width: 100vw;
-  height: 100vh;
+  height: 40vh;
 }
 
 .hero-img-container {
-  display: flex;
-  flex-flow: row wrap;
+  /* display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-end;
-  width: 96vw;
-  height: 60vh;
+*/
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: "top-left . . "
+                       ". . ."
+                       ". . bottom-right"; 
+
+  /* width: 100vw;*/
+  height: 90vh;
+
 
   background-image: url(/project-assets/hero-section/hero-image.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center ;
-
-/*
- background-attachment: fixed;
-background-position: center center ;
-width: calc(100% - 20px);
-  height: calc(100% -20px);
-  */
 }
 
+/* .hero-card {
+/* width: 100%;
+height: 100%;
+object-fit: cover; 
+min-width: 0;
+min-height: 0;
+} */
+
+.hero-card-1 {
+  background-size: cover ;
+  grid-area: top-left ;
+  background-image: url(/project-assets/hero-section/card-1.png);
+  background-position: center;
+  min-height: 0;
+  max-width: 100%
+
+}
+
+.hero-card-2 {
+  background-size: cover;
+  grid-area: bottom-right ;
+  background-image: url(/project-assets/hero-section/card-2.png);
+  min-height: 0;
+  max-width: 100%;
+}
 
 /* Starting Media Queries */
 
