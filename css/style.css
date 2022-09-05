@@ -46,7 +46,7 @@ body {
   margin: 0px;
 
       /* TEMP CHANGE */
-      height: 2500px;
+      height: 3500px;
 }
 
 h1 {
@@ -282,7 +282,63 @@ h4 {
   background-image: url(/project-assets/projects-section/3.jpg);
 }
 
-/* Starting Media Queries */
+
+/* TEstimonial Section */
+.testimonial {
+  background-color: #292E47;
+  height: 600px;
+  }
+
+  .testimonial-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #h3-testimonial {
+    color: #F4F6FC;
+    margin: 0 25% ;
+    padding-top: 50px;
+  }
+
+  .text-yellow {
+    color: #FFC600;
+    margin: 20px 25vw;
+    line-height: 38.4px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  #testimonial-profile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+    gap: 5vw;
+  }
+
+  #testimonial-profile-img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+  }
+
+  #profile-txt-grp p:first-child {
+    color: #A2D6F9;
+    width: 120px;
+    line-height: 1px;
+  }
+
+  #profile-txt-grp p:last-child {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #F4F6FC;
+  }
+
+/* ------------------------          Starting Media Queries -----------------------------------*/
 
 @media (min-width: 640px) {
 
@@ -351,7 +407,7 @@ h4 {
     .hero-content {
       margin: 0px 0px;
       height: 422px;
-      width: 100%;
+      width: 80%;
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
@@ -418,6 +474,16 @@ h3 {
 
 .project-description {
   margin-bottom: 4vw;
+}
+
+.project-container {
+  margin-top: 140px;
+}
+
+/* TEstimonial Section */
+
+.testimonial {
+  margin: 12vw 3vw;
 }
 
 }
