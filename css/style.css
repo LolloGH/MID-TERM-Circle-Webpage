@@ -286,7 +286,15 @@ h4 {
 .testimonial {
   background-color: #292E47;
   height: 580px;
+  margin: 12vw 0;
   }
+
+  
+  .testimonial-container {
+    position: relative;
+    height: 100%;
+  }
+
 
   .testimonial-text-content {
     display: flex;
@@ -340,6 +348,67 @@ h4 {
     line-height: 15px;
     color: #F4F6FC;
   }
+
+
+  .emoji {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 106px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .orbits {
+    background-image: url(/project-assets/testimonial-section/orbit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  /* Services Section */
+
+  .single-service {
+    margin: 10px 10vw 50px 10vw;
+    height: 40vh;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-img-container {
+    align-self: flex-start;
+    margin-left: 10%;
+    border-radius: 50%;
+    background-color: #ECF7FF;
+    height: 70px;
+    width: 70px;
+    position: relative;
+  }
+
+.svc-img {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 19px;
+  left: 19px;
+}
+
+
+.service-description {
+  color: #6B708D;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 8vw;
+  margin-right: 6vw;
+}
 
 /* ------------------------          Starting Media Queries -----------------------------------*/
 
@@ -489,14 +558,7 @@ h3 {
 
 /* TEstimonial Section */
 
-.testimonial {
-  margin: 12vw 0;
-}
 
-.testimonial-container {
-  position: relative;
-  height: 100%;
-}
 
 .testimonial-text-content {
   gap: 0px;
@@ -559,11 +621,32 @@ h3 {
   background-image: url(/project-assets/testimonial-section/memoji-4.png);
 }
 
-.orbits {
-  background-image: url(/project-assets/testimonial-section/orbit.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Services Section */ 
+
+.service-img-container {
+  margin-top: 2vw;
+  margin-left: 8%;
 }
+
+
+.single-service {
+  display: block;
+  margin: 0;
+  width: -webkit-fill-available;
+  height: 50vh;
+}
+
+.proj-txt {
+  margin-left: 8%;
+}
+
+.service-description {
+  font-size: 18px;
+  margin-right: 2vw;
+  margin-bottom: 5vw;
+}
+
+
 
 }
 
