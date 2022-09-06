@@ -37,6 +37,7 @@ html {
   /* line-height: 22.1px; */
   margin: 0px;
   padding: 0px;
+  height: 100%;
 }
 
 body {
@@ -44,9 +45,7 @@ body {
   font-family: 'Roboto';
   font-weight: 300;
   margin: 0px;
-
-      /* TEMP CHANGE */
-      height: 3500px;
+  height: 100%;
 }
 
 h1 {
@@ -286,15 +285,18 @@ h4 {
 /* TEstimonial Section */
 .testimonial {
   background-color: #292E47;
-  height: 600px;
+  height: 580px;
   }
 
   .testimonial-text-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
     gap: 25px;
   }
+
 
   #h3-testimonial {
     color: #F4F6FC;
@@ -314,10 +316,10 @@ h4 {
   #testimonial-profile {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 20vw;
-    gap: 2vw;
+    gap: 1vw;
   }
 
   #testimonial-profile-img {
@@ -441,9 +443,9 @@ h4 {
 .client-wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 80px;
+  margin: 80px 3vw;
 }
 
 .client-logo {
@@ -453,6 +455,10 @@ h4 {
 
 h3 {
   text-align: left;
+}
+
+.projects-section {
+  margin: auto 3vw;
 }
 
 .projects {
@@ -484,7 +490,7 @@ h3 {
 /* TEstimonial Section */
 
 .testimonial {
-  margin: 12vw 3vw;
+  margin: 12vw 0;
 }
 
 .testimonial-container {
@@ -492,21 +498,72 @@ h3 {
   height: 100%;
 }
 
+.testimonial-text-content {
+  gap: 0px;
+}
+
+#h3-testimonial {
+  margin: 0 20%;
+}
+
+.text-yellow {
+  margin: 20px 18vw;
+}
+
+#testimonial-profile-img {
+  width: 3vw;
+  height: 3vw;
+}
 
 .emoji {
   position: absolute;
-  width: 80%;
-  height: 80%;
-  background-color: #A2D6F955;
+  width: 85%;
+  height: 85%;
   top: 0;
   bottom: 0;
   left:0;
   right:0;
-
   margin: auto; 
  
 }
 
+.emoji-template {
+  position: absolute;
+  width: 13%;
+  height: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.emoji-top-left {
+  top: 0;
+  left: 0;
+  background-image: url(/project-assets/testimonial-section/memoji-1.png);
+}
+
+.emoji-top-right {
+  top: 0;
+  right: 0;
+  background-image: url(/project-assets/testimonial-section/memoji-2.png);
+}
+
+.emoji-bottom-left {
+  bottom: 0;
+  left: 0;
+  background-image: url(/project-assets/testimonial-section/memoji-3.png);
+}
+
+.emoji-bottom-right {
+  bottom: 0;
+  right: 0;
+  background-image: url(/project-assets/testimonial-section/memoji-4.png);
+}
+
+.orbits {
+  background-image: url(/project-assets/testimonial-section/orbit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 }
 
