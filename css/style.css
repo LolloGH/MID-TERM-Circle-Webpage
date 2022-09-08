@@ -104,8 +104,9 @@ h4 {
   text-decoration: none;
 }
 
-#current-page {
+.current-page {
   color: #072AC8;
+  font-weight: 700;
 }
 
 .contact-btn {

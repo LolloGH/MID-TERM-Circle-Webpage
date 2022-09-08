@@ -1,0 +1,81 @@
+/* Contact Us page specific CSS Stylesheet. Common styles are taken from main style.css  */
+
+  
+  .form-wrapper {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 660px;
+  }
+
+  form {
+    height: 100%;
+    color: #6B708D;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+  }
+
+  input {
+    height: 70px;
+  }
+
+  form .user-details{
+    display: grid;
+    grid-template-areas: "name"
+                        "email"
+                        "phone"
+                        "message"
+                        "submit";
+
+    margin: 20px 0 12px 0;
+    gap: 30px;
+  }
+
+  .template-form-div {
+    display: flex;
+    flex-flow: column nowrap;  
+    height: 100%; 
+    gap: 10px;  
+  }
+
+  .name-div {
+    grid-area: name;
+  }
+
+  .email-div {
+    grid-area: email;
+  }
+
+  .phone-div {
+    grid-area: phone;
+  }
+
+  .message-div {
+    grid-area: message;
+  }
+
+  #msg {
+    height: 140px;
+  }
+
+  .submit-div {
+    grid-area: submit;
+  }
+  
+  /* ------------------------          Starting Media Queries -----------------------------------*/
+  
+  @media screen and (min-width: 640px) {
+  
+    form .user-details{
+        display: grid;
+        grid-template-areas: "name name"
+                            "email phone"
+                            "message message"
+                            "submit submit";
+    
+        margin: 20px 0 12px 0;
+        gap: 30px;
+      }
+  
+  }
