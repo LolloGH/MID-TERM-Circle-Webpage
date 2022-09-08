@@ -625,7 +625,7 @@ h3 {
 }
 
 .projects-section {
-  margin: auto 3vw;
+  margin: auto ;
 }
 
 .projects {
@@ -656,7 +656,10 @@ h3 {
 
 /* TEstimonial Section */
 
-
+.testimonial {
+  margin-left: -90px;
+  margin-right: -90px;
+}
 
 .testimonial-text-content {
   gap: 0px;
@@ -722,7 +725,7 @@ h3 {
 /* Services Section */ 
 
 .services {
-  margin: auto 3vw;
+  margin: auto ;
 }
 
 .service-img-container {
@@ -755,7 +758,7 @@ h3 {
 }
 
 .CTA {
-  margin-top: 15vw;
+  margin: 15vw -90px 0;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;

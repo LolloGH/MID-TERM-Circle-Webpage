@@ -1,0 +1,100 @@
+/* Projects page specific CSS Stylesheet. Common styles are taken from main style.css  */
+
+/* Project Hero Section  */
+
+.projects-hero {
+  margin-top: -45px;
+}
+
+.subtitle-area {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitle-area p:first-child {
+  color: #6B708D;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 5px;
+}
+
+.subtitle-area p:last-child {
+  display: none;
+  color: #6B708D;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.completed-on {
+  color:#292E47;
+}
+
+
+/* Projects Section  */
+
+
+.projects-article-wrapper {
+  height: 1120px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.proj-article-img {
+  background-image: url(/project-assets/projects-section/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+#project-img-container-4 {
+  background-image: url(/project-assets/projects-section/4.jpg);
+}
+
+#project-img-container-5 {
+  background-image: url(/project-assets/projects-section/5.jpg);
+}
+
+#project-img-container-6 {
+  background-image: url(/project-assets/projects-section/6.jpg);
+}
+
+.proj-article-txt {
+  color: #6B708D;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+
+
+
+/* ------------------------          Starting Media Queries -----------------------------------*/
+
+@media screen and (min-width: 640px) {
+
+  .subtitle-area {
+    justify-content: space-between;
+  }
+
+  .subtitle-area p:last-child {
+    display: block;
+  }
+
+  .subtitle-area p:first-child {
+    margin-top: revert;
+}
+
+.projects-hero {
+  margin-top: revert;
+}
+
+.projects-article-wrapper {
+  all: unset;
+}
+
+}

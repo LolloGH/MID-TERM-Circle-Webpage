@@ -3,20 +3,129 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width", initial-scale=1" />
-    <link rel="stylesheet"  href="./css/style.css" />
+    <link rel="stylesheet"  href="/css/style.css" />
+    <link rel="stylesheet"  href="/css/projectsStyle.css" />
     <title>Circle - Projects</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-wrapper">
-      <p id="top-logo">Circle</p>
+      <img alt="Circle logo" src="/project-assets/logos/circle.svg">
       <ul>
-        <li><a id="current-page" href="#">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a id="current-page" href="../index.html">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
       </ul>
       <div class="contact-btn">
-        <a class="link-contact-us" href="contact-us.html">Contact Us</a>
+        <a class="link-contact-us" href="/pages/contact-us.html">Contact Us</a>
       </div> 
     </div>
     </nav>
+
+    <!-- Projects Hero Section  -->
+
+    <section class="projects-hero">
+      <article>
+        <h1>Simplify</h1>
+        <div class="subtitle-area">
+          <p>UI Design & App Development</p>
+          <p> <span class="completed-on"><b>Completed on </b></span><time datetime="2021-06-22">June 22, 2021</time></p>
+        </div>
+        <div class="projects-article-wrapper">
+          <div class="proj-article-img">
+
+          </div>
+          <p class="proj-article-txt">
+            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+            Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+            Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute
+            id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt
+            mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. </br>
+          </br>
+            Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor 
+            cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. 
+            Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit 
+            dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex 
+            duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt 
+            ut voluptate aute id deserunt nis cillum minim tempor enim. 
+          </p>
+        </div>
+      </article>
+    </section>
+
+    
+    <!-- Projects Section  -->
+
+    <section class="projects-section">
+      <div class="project-container">
+        <h3>Other Projects</h3>
+        <div class="projects">
+          <article class="single-project">
+           <div class="project-img-container" id="project-img-container-4"> 
+          </div>
+          <div class="project-text">
+           <h4 class="project-title">Orbit</h4>
+           <p class="project-description">UI Design</p>
+           <a class="learn-more" href="#">Learn more</a>
+          </div>
+          </article>
+          <article class="single-project">
+            <div class="project-img-container" id="project-img-container-5"> 
+            </div>
+            <div class="project-text">
+            <h4 class="project-title">Purify</h4>
+            <p class="project-description">UI/UX Design</p>
+            <a class="learn-more" href="#">Learn more</a>
+            </div>
+           </article>
+           <article class="single-project">
+            <div class="project-img-container" id="project-img-container-6"> 
+            </div>
+            <div class="project-text">
+            <h4 class="project-title">CryptoPie</h4>
+            <p class="project-description">App Development</p>
+            <a class="learn-more" href="#">Learn more</a>
+            </div>
+           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CTA Section  -->
+
+    <section class="CTA">
+      <div class="CTA-container">
+        <h3 id="h3-CTA">Do you have any questions?</h3>
+        <p>Let us help you!</p>
+          <form class="CTA-interaction" action="/form/submit" method="POST">
+            <input class="email-input" type="email" placeholder="Enter your email" name="email"/>
+            <button class="btn-subscribe">Subscribe</button>
+          </form>
+      </div>
+    </section>
+    
+    <!-- Footer  -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <img alt="Circle logo" src="/project-assets/logos/circle.svg">
+          <address class="address">2972 Westheimer Rd. Santa Ana, </br> Illinois 85486 </address>
+        </div>
+        <!-- <div class="footer-links"> -->
+          <ul class="footer-links">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="/pages/projects.html">Projects</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        <!-- </div> -->
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="/js/index.js"></script>
+  </body>
+</html>
