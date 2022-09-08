@@ -94,7 +94,7 @@
 }
 
 .projects-article-wrapper {
-  all: unset;
+  all: inherit;
 }
 
 }
