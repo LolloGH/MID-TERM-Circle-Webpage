@@ -6,6 +6,7 @@
   margin-top: -45px;
 }
 
+
 .subtitle-area {
   display: flex;
   flex-flow: row nowrap;
@@ -38,7 +39,7 @@
 
 
 .projects-article-wrapper {
-  height: 1120px;
+  height: 1030px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -65,8 +66,8 @@
 .proj-article-txt {
   color: #6B708D;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 22px;
   margin-top: 30px;
 }
 
@@ -95,6 +96,11 @@
 
 .projects-article-wrapper {
   all: inherit;
+}
+
+.proj-article-txt {
+  font-size: 20px;
+  line-height: 24px;
 }
 
 }

@@ -1,33 +1,4 @@
-/*
-Color styles
 
-Deep blue: 072AC8
-Light blue: 43D2FF
-3rd light blue: A2D6F9
-4th light blue: D1EDFF
-
-Blakish: 292E47
-Grey: 6B708D
-Light Grey: F2F4FC
-4th Grey: ECF7FF
-
-Yellow: FFC600
-
-
-Text Styles
-
-Heading H1 60 Bold
-Heading H2 50 Bold
-Heading H3 40 Bold
-Heading H4 24 Bold
-Body Intro Text 24 Medium
-Body Intro Text 20 Regular
-Headline Text 17 Regular
-Headline Text 17 Medium
-Caption 1 Text 15 Regular
-Caption 2 Text 13 Regular
-
-*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
@@ -61,7 +32,6 @@ h3 {
   font-weight: 700;
   line-height: 47px;
   text-align: left;
-  /* margin-bottom: 20px; */
   color: #292E47;
   text-align: center;
 }
@@ -83,7 +53,7 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10px;
+  margin: 0px 20px;
   height: 52px;
 }
 
@@ -111,14 +81,12 @@ h4 {
 
 .contact-btn {
   display:none;
-
   background-color: #072AC8;
   padding: 4px 10px;
   width: 150px;
   height: 52px;
   justify-content: center;
   align-items: center;
-
 }
 
 
@@ -138,7 +106,6 @@ h4 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "top-left  . "
-                       /* ". . ." */
                        ". bottom-right";
   height: 90vh;
   background-image: url(/project-assets/hero-section/hero-image.png);
@@ -151,15 +118,12 @@ h4 {
   grid-area: top-left ;
   min-height: 0;
   position: relative;
-  /* max-width: 70%; */
-
 }
 
 .card-2-wrapper {
   grid-area: bottom-right ;
   min-height: 0;
   position: relative;
-  /* max-width: 50%; */
 }
 
 .hero-card-1 {
@@ -173,14 +137,10 @@ h4 {
   width: 70%;
 }
 
-
-
 .hero-content {
   margin: 0px 10px;
   gap: 20px;
 }
-
-
 
 .hero-explain {
   font-size: 20px;
@@ -206,6 +166,8 @@ h4 {
   font-size: 17px;
   line-height: 22.1px;
   color: #6B708D;
+  text-decoration: none;
+  margin-top: 16px;
 }
 
 .hero-content-bottom-wrapper {
@@ -472,7 +434,7 @@ border: none;
   /* Footer  */
 
   footer {
-    margin: 50px 22vw;
+    margin: 50px 20vw;
 }
 
   .footer-container {
@@ -539,9 +501,26 @@ border: none;
     padding: 0;
   }
 
-  .contact-btn {
-    display:flex;
-    }
+
+    /* .contact-btn {
+      display:flex;
+      background-color: #072AC8;
+      padding: 4px 10px;
+      width: 150px;
+      height: 52px;
+      justify-content: center;
+      align-items: center;
+    } */
+
+    #contact-btn {
+      display:flex;
+      background-color: #072AC8;
+      padding: 4px 10px;
+      width: 150px;
+      height: 52px;
+      justify-content: center;
+      align-items: center;
+    }  
 
     .link-contact-us {
       color: #FFF;
@@ -551,8 +530,6 @@ border: none;
     /* Hero Section */
 
     .hero {
-      /* margin-top: 20px; */
-      /* width: 100%; */
       min-height: 500px;
     }
 
@@ -682,9 +659,9 @@ h3 {
 .emoji {
   position: absolute;
   width: 85%;
-  height: 85%;
+  height: 92%;
   top: 0;
-  bottom: 0;
+  bottom: -20px;
   left:0;
   right:0;
   margin: auto; 
@@ -694,7 +671,7 @@ h3 {
 .emoji-template {
   position: absolute;
   width: 13%;
-  height: 25%;
+  height: 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }
