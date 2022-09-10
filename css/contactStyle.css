@@ -84,10 +84,10 @@
     border-radius: 5px;
     box-shadow: 0 0 15px 5px #ccc;
     height: 15%;
-    width: 50%;
+    width: 75%;
     margin: auto;
     position: fixed;
-    margin: 5vw 13vw;
+    margin: 21vw 12vw;
     display: none;
   }
 
@@ -126,6 +126,11 @@
 
   footer {
     margin: 0px 0vw;
+  }
+
+  .success-msg {
+    margin: 5vw 13vw;
+    width: 50%;
   }
   
   }
