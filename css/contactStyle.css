@@ -75,6 +75,34 @@
   .submit-div {
     grid-area: submit;
   }
+
+  .success-msg {
+    /* background-color: #A2F0C9AA;
+    border: #3CD387 solid; */
+    background-color: #a8f0c6;
+    border-left: 5px solid #178344;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px #ccc;
+    height: 15%;
+    width: 50%;
+    margin: auto;
+    position: fixed;
+    margin: 5vw 13vw;
+    display: none;
+  }
+
+  .success-visible {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .success-msg h3 {
+    text-align: center;
+    color: #02351B;
+    font-size: 30px;
+  }
   
   /* ------------------------          Starting Media Queries -----------------------------------*/
   

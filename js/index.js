@@ -43,7 +43,7 @@ function submitForm() {
       })
 
       .then(json => {
-        alert("Your form has been sent successfully, thank you");
+        displaySuccess();
     })
       .catch((error) => { console.log(error); });
     
@@ -57,7 +57,11 @@ function submitForm() {
     document.getElementById('msg').value= '';
  }
 
-
+function displaySuccess() {
+    const succMsg = document.getElementsByClassName('success-msg')[0];
+    succMsg.className = "success-msg success-visible";
+    setTimeout(function() {succMsg.className = "success-msg"},2000);
+}
 
 window.addEventListener('load', () => {
     
@@ -66,6 +70,7 @@ window.addEventListener('load', () => {
         event.preventDefault();
         submitForm();
         clearForm(form);   // <-- Clear Form
+
     })
 });
 
