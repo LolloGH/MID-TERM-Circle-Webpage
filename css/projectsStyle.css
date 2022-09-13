@@ -6,7 +6,6 @@
   margin-top: -45px;
 }
 
-
 .subtitle-area {
   display: flex;
   flex-flow: row nowrap;
@@ -36,7 +35,6 @@
 
 
 /* Projects Section  */
-
 
 .projects-article-wrapper {
   height: 1030px;
@@ -70,8 +68,6 @@
   line-height: 22px;
   margin-top: 30px;
 }
-
-
 
 
 /* ------------------------          Starting Media Queries -----------------------------------*/

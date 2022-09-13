@@ -10,7 +10,10 @@
   <body>
     <nav class="navbar">
       <div class="nav-wrapper">
-      <img alt="Circle logo" src="/project-assets/logos/circle.svg">
+      <div class="circle-logo-wrapper" >
+        <img alt="Circle logo" src="/project-assets/logos/circle.svg">
+        <a id="circle-logo-link" href="/index.html"></a>
+      </div>
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a class="current-page" href="#">Projects</a></li>
@@ -98,9 +101,9 @@
       <div class="CTA-container">
         <h3 id="h3-CTA">Do you have any questions?</h3>
         <p>Let us help you!</p>
-          <form class="CTA-interaction" action="/form/submit" method="POST">
+          <form class="CTA-interaction" action="#" method="POST">
             <input class="email-input" type="email" placeholder="Enter your email" name="email"/>
-            <button class="btn-subscribe">Subscribe</button>
+            <div class="btn-subscribe">Subscribe</>
           </form>
       </div>
     </section>

@@ -1,5 +1,8 @@
 /* Contact Us page specific CSS Stylesheet. Common styles are taken from main style.css  */
 
+.current-page {
+  font-weight: 700;
+}
 
 .projects-hero h1 {
   margin-top: 15px;
@@ -26,7 +29,9 @@
     background-color: rgba(107, 112, 141, 0.1);
     border: none;
     padding-left: 20px;
+    cursor: text;
   }
+
 
   #submit {
     color: #FFF;
@@ -77,8 +82,6 @@
   }
 
   .success-msg {
-    /* background-color: #A2F0C9AA;
-    border: #3CD387 solid; */
     background-color: #a8f0c6;
     border-left: 5px solid #178344;
     border-radius: 5px;
@@ -108,6 +111,10 @@
   
   @media screen and (min-width: 640px) {
   
+    .current-page {
+      font-weight: 400;
+    }
+
     form .user-details{
         display: grid;
         grid-template-areas: "name name"
