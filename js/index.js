@@ -1,20 +1,15 @@
 const form = document.querySelector('form');
 
-
-function submitForm() {
-
+function submitForm(formParam) {
+    
     const url = 'https://database.deta.sh/v1/a0wwnrex/contactmessages/items'
-
-    const fFullName = document.getElementById('name').value;
-    const fEmail = document.getElementById('email').value;
-    const fPhone = document.getElementById('tel').value;
-    const fMessage = document.getElementById('msg').value;
-
+    const fInputArray = formParam.querySelectorAll('input');
+    
     const data = {
-        Name: fFullName,
-        Email: fEmail,
-        Phone: fPhone,
-        Message: fMessage
+        Name: fInputArray[0].value,
+        Email: fInputArray[1].value,
+        Phone: fInputArray[2].value,
+        Message: fInputArray[3].value
     }
 
     const body = {item: data}
@@ -28,10 +23,6 @@ function submitForm() {
         },
         body: JSON.stringify(body)
     };
-
-    console.log(url, fetchParams);
-
-
 
      fetch(url, fetchParams) 
       .then(response => {
@@ -47,14 +38,12 @@ function submitForm() {
     })
       .catch((error) => { console.log(error); });
     
- };
-
+};
 
  function clearForm (formElem) {
-    document.getElementById('name').value= '';
-    document.getElementById('email').value= '';
-    document.getElementById('tel').value= '';
-    document.getElementById('msg').value= '';
+    for(let i=0; i < formElem.querySelectorAll('input').length -1; i++) {
+        formElem.querySelectorAll('input')[i].value = '';
+    }
  }
 
 function displaySuccess() {
@@ -64,13 +53,11 @@ function displaySuccess() {
 }
 
 window.addEventListener('load', () => {
-    
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        submitForm();
-        clearForm(form);   // <-- Clear Form
-
+        submitForm(form);
+        clearForm(form);   // <-- Clear Form input
     })
 });
 
