@@ -626,6 +626,7 @@ h3 {
 }
 
 .single-project {
+  display: block;
   margin: 0;
   width: -webkit-fill-available;
   height: 50vh;
