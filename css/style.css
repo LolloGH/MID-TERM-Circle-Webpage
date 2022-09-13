@@ -759,7 +759,7 @@ h3 {
 /* FOOTER */
 
 footer {
-  margin: 0px 7vw;
+  margin: 0px;
 }
 
 .footer-container {
@@ -776,6 +776,7 @@ footer {
   align-items: stretch;
   height: 100px;
   margin: 0px;
+  justify-content: flex-end;
 }
 
 }
